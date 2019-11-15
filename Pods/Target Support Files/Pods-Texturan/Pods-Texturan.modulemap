@@ -1,0 +1,6 @@
+framework module Pods_Texturan {
+  umbrella header "Pods-Texturan-umbrella.h"
+
+  export *
+  module * { export * }
+}

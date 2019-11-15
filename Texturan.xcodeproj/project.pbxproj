@@ -3,27 +3,49 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A615537EC3F19A32BC70F8AA /* Pods_Texturan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECAC6A716849CC91B0E51E41 /* Pods_Texturan.framework */; };
+		E5077332237D4E46007F8C87 /* LayoutNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5077331237D4E46007F8C87 /* LayoutNode.swift */; };
+		E5077334237D6192007F8C87 /* OverlayNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5077333237D6192007F8C87 /* OverlayNode.swift */; };
+		E5077336237D6B25007F8C87 /* BackgroundNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5077335237D6B25007F8C87 /* BackgroundNode.swift */; };
+		E54BC67E237AA39300FF8FAA /* RelativeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54BC67D237AA39300FF8FAA /* RelativeNode.swift */; };
+		E54BC680237AC9A100FF8FAA /* CenterNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54BC67F237AC9A100FF8FAA /* CenterNode.swift */; };
+		E573DD6B237C34C70025A4D4 /* WrapperNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E573DD6A237C34C70025A4D4 /* WrapperNode.swift */; };
 		E591B74F237AA258008A1816 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E591B74E237AA258008A1816 /* AppDelegate.swift */; };
 		E591B751237AA258008A1816 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E591B750237AA258008A1816 /* SceneDelegate.swift */; };
-		E591B753237AA258008A1816 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E591B752237AA258008A1816 /* ViewController.swift */; };
+		E591B753237AA258008A1816 /* TexturanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E591B752237AA258008A1816 /* TexturanViewController.swift */; };
 		E591B756237AA258008A1816 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E591B754237AA258008A1816 /* Main.storyboard */; };
 		E591B758237AA259008A1816 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E591B757237AA259008A1816 /* Assets.xcassets */; };
 		E591B75B237AA259008A1816 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E591B759237AA259008A1816 /* LaunchScreen.storyboard */; };
+		E5C7F5AB237D2611000686FA /* RatioNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C7F5AA237D2611000686FA /* RatioNode.swift */; };
+		E5C7F5AD237D2B7E000686FA /* CornerNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C7F5AC237D2B7E000686FA /* CornerNode.swift */; };
+		E5C7F5AF237D463F000686FA /* AbsoluteNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C7F5AE237D463F000686FA /* AbsoluteNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		45C5B2918ABA9D6A44F86C99 /* Pods-Texturan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Texturan.debug.xcconfig"; path = "Target Support Files/Pods-Texturan/Pods-Texturan.debug.xcconfig"; sourceTree = "<group>"; };
+		72A85475AFDED282DBC2BDB2 /* Pods-Texturan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Texturan.release.xcconfig"; path = "Target Support Files/Pods-Texturan/Pods-Texturan.release.xcconfig"; sourceTree = "<group>"; };
+		E5077331237D4E46007F8C87 /* LayoutNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutNode.swift; sourceTree = "<group>"; };
+		E5077333237D6192007F8C87 /* OverlayNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayNode.swift; sourceTree = "<group>"; };
+		E5077335237D6B25007F8C87 /* BackgroundNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundNode.swift; sourceTree = "<group>"; };
+		E54BC67D237AA39300FF8FAA /* RelativeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelativeNode.swift; sourceTree = "<group>"; };
+		E54BC67F237AC9A100FF8FAA /* CenterNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterNode.swift; sourceTree = "<group>"; };
+		E573DD6A237C34C70025A4D4 /* WrapperNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrapperNode.swift; sourceTree = "<group>"; };
 		E591B74B237AA258008A1816 /* Texturan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Texturan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E591B74E237AA258008A1816 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E591B750237AA258008A1816 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E591B752237AA258008A1816 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E591B752237AA258008A1816 /* TexturanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TexturanViewController.swift; sourceTree = "<group>"; };
 		E591B755237AA258008A1816 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E591B757237AA259008A1816 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E591B75A237AA259008A1816 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E591B75C237AA259008A1816 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5C7F5AA237D2611000686FA /* RatioNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatioNode.swift; sourceTree = "<group>"; };
+		E5C7F5AC237D2B7E000686FA /* CornerNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerNode.swift; sourceTree = "<group>"; };
+		E5C7F5AE237D463F000686FA /* AbsoluteNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsoluteNode.swift; sourceTree = "<group>"; };
+		ECAC6A716849CC91B0E51E41 /* Pods_Texturan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Texturan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +53,49 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A615537EC3F19A32BC70F8AA /* Pods_Texturan.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		45169F12445A8E66D0CD7560 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				45C5B2918ABA9D6A44F86C99 /* Pods-Texturan.debug.xcconfig */,
+				72A85475AFDED282DBC2BDB2 /* Pods-Texturan.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		57B91C964E18ABEF640E9458 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ECAC6A716849CC91B0E51E41 /* Pods_Texturan.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E573DD6C237C35460025A4D4 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				E591B74E237AA258008A1816 /* AppDelegate.swift */,
+				E591B750237AA258008A1816 /* SceneDelegate.swift */,
+				E591B754237AA258008A1816 /* Main.storyboard */,
+				E591B757237AA259008A1816 /* Assets.xcassets */,
+				E591B759237AA259008A1816 /* LaunchScreen.storyboard */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
 		E591B742237AA258008A1816 = {
 			isa = PBXGroup;
 			children = (
 				E591B74D237AA258008A1816 /* Texturan */,
 				E591B74C237AA258008A1816 /* Products */,
+				45169F12445A8E66D0CD7560 /* Pods */,
+				57B91C964E18ABEF640E9458 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,13 +110,18 @@
 		E591B74D237AA258008A1816 /* Texturan */ = {
 			isa = PBXGroup;
 			children = (
-				E591B74E237AA258008A1816 /* AppDelegate.swift */,
-				E591B750237AA258008A1816 /* SceneDelegate.swift */,
-				E591B752237AA258008A1816 /* ViewController.swift */,
-				E591B754237AA258008A1816 /* Main.storyboard */,
-				E591B757237AA259008A1816 /* Assets.xcassets */,
-				E591B759237AA259008A1816 /* LaunchScreen.storyboard */,
 				E591B75C237AA259008A1816 /* Info.plist */,
+				E573DD6C237C35460025A4D4 /* Others */,
+				E591B752237AA258008A1816 /* TexturanViewController.swift */,
+				E5C7F5AE237D463F000686FA /* AbsoluteNode.swift */,
+				E54BC67D237AA39300FF8FAA /* RelativeNode.swift */,
+				E54BC67F237AC9A100FF8FAA /* CenterNode.swift */,
+				E573DD6A237C34C70025A4D4 /* WrapperNode.swift */,
+				E5C7F5AA237D2611000686FA /* RatioNode.swift */,
+				E5C7F5AC237D2B7E000686FA /* CornerNode.swift */,
+				E5077331237D4E46007F8C87 /* LayoutNode.swift */,
+				E5077333237D6192007F8C87 /* OverlayNode.swift */,
+				E5077335237D6B25007F8C87 /* BackgroundNode.swift */,
 			);
 			path = Texturan;
 			sourceTree = "<group>";
@@ -74,9 +133,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E591B75F237AA259008A1816 /* Build configuration list for PBXNativeTarget "Texturan" */;
 			buildPhases = (
+				64C44943C31CBDFE035829C0 /* [CP] Check Pods Manifest.lock */,
 				E591B747237AA258008A1816 /* Sources */,
 				E591B748237AA258008A1816 /* Frameworks */,
 				E591B749237AA258008A1816 /* Resources */,
+				6908F8105BC3CA3498F07736 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +194,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		64C44943C31CBDFE035829C0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Texturan-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6908F8105BC3CA3498F07736 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Texturan/Pods-Texturan-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Texturan/Pods-Texturan-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Texturan/Pods-Texturan-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E591B747237AA258008A1816 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E591B753237AA258008A1816 /* ViewController.swift in Sources */,
+				E591B753237AA258008A1816 /* TexturanViewController.swift in Sources */,
 				E591B74F237AA258008A1816 /* AppDelegate.swift in Sources */,
+				E5C7F5AF237D463F000686FA /* AbsoluteNode.swift in Sources */,
+				E5C7F5AD237D2B7E000686FA /* CornerNode.swift in Sources */,
 				E591B751237AA258008A1816 /* SceneDelegate.swift in Sources */,
+				E5077334237D6192007F8C87 /* OverlayNode.swift in Sources */,
+				E54BC680237AC9A100FF8FAA /* CenterNode.swift in Sources */,
+				E54BC67E237AA39300FF8FAA /* RelativeNode.swift in Sources */,
+				E573DD6B237C34C70025A4D4 /* WrapperNode.swift in Sources */,
+				E5077336237D6B25007F8C87 /* BackgroundNode.swift in Sources */,
+				E5C7F5AB237D2611000686FA /* RatioNode.swift in Sources */,
+				E5077332237D4E46007F8C87 /* LayoutNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +394,7 @@
 		};
 		E591B760237AA259008A1816 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45C5B2918ABA9D6A44F86C99 /* Pods-Texturan.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +413,7 @@
 		};
 		E591B761237AA259008A1816 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72A85475AFDED282DBC2BDB2 /* Pods-Texturan.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
