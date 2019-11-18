@@ -34,7 +34,6 @@ class CornerNode: ASDisplayNode {
     
     override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
         let cornerSpec = ASCornerLayoutSpec(child: childNode, corner: cornerNode, location: .topRight)
-        cornerSpec.offset = CGPoint(x: -10, y: 10)
         
         return ASCenterLayoutSpec(horizontalPosition: .center, verticalPosition: .center, sizingOption: .minimumSize, child: cornerSpec)
     }

@@ -24,7 +24,7 @@ class WrapperNode: ASDisplayNode {
     }
     
     override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
-        let wrapperSpec = ASWrapperLayoutSpec(layoutElement: testNode)
-        return ASInsetLayoutSpec(insets: safeAreaInsets, child: wrapperSpec)
+//        let wrapperSpec = ASWrapperLayoutSpec(layoutElement: testNode)
+        return ASInsetLayoutSpec(insets: safeAreaInsets, child: testNode)
     }
 }

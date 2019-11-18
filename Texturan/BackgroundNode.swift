@@ -20,7 +20,7 @@ class BackgroundNode: ASDisplayNode {
     
     let childNode: ASTextNode = {
         let node = ASTextNode()
-        node.attributedText = NSAttributedString(string: "Lorem Ipsum")
+        node.attributedText = NSAttributedString(string: "Texturan")
         node.backgroundColor = .none
         
         return node

@@ -11,26 +11,26 @@ import AsyncDisplayKit
 class TexturanViewController: ASViewController<ASDisplayNode> {
     enum List {
         case wrapperNode(title: String, node: ASDisplayNode)
-        case relativeNode(title: String, node: ASDisplayNode)
-        case centerNode(title: String, node: ASDisplayNode)
         case ratioNode(title: String, node: ASDisplayNode)
         case cornerNode(title: String, node: ASDisplayNode)
-        case absoluteNode(title: String, node: ASDisplayNode)
-        case layoutNode(title: String, node: ASDisplayNode)
         case overlayNode(title: String, node: ASDisplayNode)
         case backgroundNode(title: String, node: ASDisplayNode)
+        case absoluteNode(title: String, node: ASDisplayNode)
+        case relativeNode(title: String, node: ASDisplayNode)
+        case centerNode(title: String, node: ASDisplayNode)
+        case texturanNode(title: String, node: ASDisplayNode)
     }
     
     let list = [
         List.wrapperNode(title: "ASWrapperLayoutSpec", node: WrapperNode()),
-        List.relativeNode(title: "ASRelativelayoutSpec", node: RelativeNode()),
-        List.centerNode(title: "ASCenterLayoutSpec", node: CenterNode()),
         List.ratioNode(title: "ASRatioLayoutSpec", node: RatioNode()),
         List.cornerNode(title: "ASCornerLayoutSpec", node: CornerNode()),
         List.absoluteNode(title: "ASAbsoluteLayoutSpec", node: AbsoluteNode()),
         List.overlayNode(title: "ASOverlayLayoutSpec", node: OverlayNode()),
         List.backgroundNode(title: "ASBackgroundLayoutSpec", node: BackgroundNode()),
-        List.layoutNode(title: "ASLayout", node: LayoutNode())
+        List.relativeNode(title: "ASRelativelayoutSpec", node: RelativeNode()),
+        List.centerNode(title: "ASCenterLayoutSpec", node: CenterNode()),
+        List.texturanNode(title: "Texturan", node: TexturanNode())
     ]
     
     init() {
@@ -58,12 +58,12 @@ extension TexturanViewController: ASTableDelegate, ASTableDataSource {
         switch list {
         case let .wrapperNode(arg),
              let .relativeNode(arg),
-             let .centerNode(arg),
              let .ratioNode(arg),
              let .cornerNode(arg),
-             let .layoutNode(arg),
              let .overlayNode(arg),
              let .backgroundNode(arg),
+             let .centerNode(arg),
+             let .texturanNode(arg),
              let .absoluteNode(arg):
             textNode.attributedText = NSAttributedString(string: arg.title, attributes: attributes)
         }
@@ -86,12 +86,12 @@ extension TexturanViewController: ASTableDelegate, ASTableDataSource {
         switch list {
         case let .wrapperNode(arg),
              let .relativeNode(arg),
-             let .centerNode(arg),
              let .ratioNode(arg),
              let .cornerNode(arg),
-             let .layoutNode(arg),
              let .overlayNode(arg),
              let .backgroundNode(arg),
+             let .centerNode(arg),
+             let .texturanNode(arg),
              let .absoluteNode(arg):
             viewController = ASViewController(node: arg.node)
             viewController.title = arg.title

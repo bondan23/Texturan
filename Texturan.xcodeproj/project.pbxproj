@@ -11,6 +11,7 @@
 		E5077332237D4E46007F8C87 /* LayoutNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5077331237D4E46007F8C87 /* LayoutNode.swift */; };
 		E5077334237D6192007F8C87 /* OverlayNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5077333237D6192007F8C87 /* OverlayNode.swift */; };
 		E5077336237D6B25007F8C87 /* BackgroundNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5077335237D6B25007F8C87 /* BackgroundNode.swift */; };
+		E5077339237E7438007F8C87 /* TexturanNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5077338237E7438007F8C87 /* TexturanNode.swift */; };
 		E54BC67E237AA39300FF8FAA /* RelativeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54BC67D237AA39300FF8FAA /* RelativeNode.swift */; };
 		E54BC680237AC9A100FF8FAA /* CenterNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54BC67F237AC9A100FF8FAA /* CenterNode.swift */; };
 		E573DD6B237C34C70025A4D4 /* WrapperNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E573DD6A237C34C70025A4D4 /* WrapperNode.swift */; };
@@ -31,6 +32,7 @@
 		E5077331237D4E46007F8C87 /* LayoutNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutNode.swift; sourceTree = "<group>"; };
 		E5077333237D6192007F8C87 /* OverlayNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayNode.swift; sourceTree = "<group>"; };
 		E5077335237D6B25007F8C87 /* BackgroundNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundNode.swift; sourceTree = "<group>"; };
+		E5077338237E7438007F8C87 /* TexturanNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TexturanNode.swift; sourceTree = "<group>"; };
 		E54BC67D237AA39300FF8FAA /* RelativeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelativeNode.swift; sourceTree = "<group>"; };
 		E54BC67F237AC9A100FF8FAA /* CenterNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterNode.swift; sourceTree = "<group>"; };
 		E573DD6A237C34C70025A4D4 /* WrapperNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrapperNode.swift; sourceTree = "<group>"; };
@@ -77,7 +79,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E573DD6C237C35460025A4D4 /* Others */ = {
+		E573DD6C237C35460025A4D4 /* Hehehe */ = {
 			isa = PBXGroup;
 			children = (
 				E591B74E237AA258008A1816 /* AppDelegate.swift */,
@@ -86,7 +88,7 @@
 				E591B757237AA259008A1816 /* Assets.xcassets */,
 				E591B759237AA259008A1816 /* LaunchScreen.storyboard */,
 			);
-			path = Others;
+			path = Hehehe;
 			sourceTree = "<group>";
 		};
 		E591B742237AA258008A1816 = {
@@ -111,7 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				E591B75C237AA259008A1816 /* Info.plist */,
-				E573DD6C237C35460025A4D4 /* Others */,
+				E573DD6C237C35460025A4D4 /* Hehehe */,
 				E591B752237AA258008A1816 /* TexturanViewController.swift */,
 				E5C7F5AE237D463F000686FA /* AbsoluteNode.swift */,
 				E54BC67D237AA39300FF8FAA /* RelativeNode.swift */,
@@ -122,6 +124,7 @@
 				E5077331237D4E46007F8C87 /* LayoutNode.swift */,
 				E5077333237D6192007F8C87 /* OverlayNode.swift */,
 				E5077335237D6B25007F8C87 /* BackgroundNode.swift */,
+				E5077338237E7438007F8C87 /* TexturanNode.swift */,
 			);
 			path = Texturan;
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 				E5C7F5AD237D2B7E000686FA /* CornerNode.swift in Sources */,
 				E591B751237AA258008A1816 /* SceneDelegate.swift in Sources */,
 				E5077334237D6192007F8C87 /* OverlayNode.swift in Sources */,
+				E5077339237E7438007F8C87 /* TexturanNode.swift in Sources */,
 				E54BC680237AC9A100FF8FAA /* CenterNode.swift in Sources */,
 				E54BC67E237AA39300FF8FAA /* RelativeNode.swift in Sources */,
 				E573DD6B237C34C70025A4D4 /* WrapperNode.swift in Sources */,

@@ -62,7 +62,7 @@ class RelativeNode: ASDisplayNode {
         relativeSpec3.sizingOption = .minimumSize
         relativeSpec3.child = testNode3
         
-        let wrapperSpec = ASWrapperLayoutSpec.init(layoutElements: [relativeSpec, relativeSpec2, relativeSpec3])
+        let wrapperSpec = ASWrapperLayoutSpec(layoutElements: [relativeSpec, relativeSpec2, relativeSpec3])
         
         return ASInsetLayoutSpec(insets: safeAreaInsets, child: wrapperSpec)
     }

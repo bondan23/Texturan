@@ -35,7 +35,6 @@ class AbsoluteNode: ASDisplayNode {
     }
     
     override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
-//        let absoluteSpec = ASAbsoluteLayoutSpec(sizing: ASAbsoluteLayoutSpecSizing.sizeToFit, children: [testNode,testNode2])
         let absoluteSpec = ASAbsoluteLayoutSpec(children: [testNode, testNode2])
         
         return ASInsetLayoutSpec(insets: safeAreaInsets, child: absoluteSpec)
