@@ -35,11 +35,4 @@ class OverlayNode: ASDisplayNode {
         automaticallyRelayoutOnSafeAreaChanges = true
     }
     
-    override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
-        let overlaySpec = ASOverlayLayoutSpec(child: childNode, overlay: overlayNode)
-        
-        let centerSpec = ASCenterLayoutSpec(horizontalPosition: .center, verticalPosition: .center, sizingOption: .minimumSize, child: overlaySpec)
-        
-        return ASInsetLayoutSpec(insets: safeAreaInsets, child: centerSpec)
-    }
 }

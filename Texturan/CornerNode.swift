@@ -9,10 +9,9 @@
 import AsyncDisplayKit
 
 class CornerNode: ASDisplayNode {
-    
     let cornerNode: ASDisplayNode = {
         let node = ASDisplayNode()
-        node.backgroundColor = .green
+        node.backgroundColor = .blue
         node.style.preferredSize = CGSize(width: 20, height: 20)
         
         return node
@@ -30,11 +29,5 @@ class CornerNode: ASDisplayNode {
         super.init()
         backgroundColor = .init(white: 0.8, alpha: 1.0)
         automaticallyManagesSubnodes = true
-    }
-    
-    override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
-        let cornerSpec = ASCornerLayoutSpec(child: childNode, corner: cornerNode, location: .topRight)
-        
-        return ASCenterLayoutSpec(horizontalPosition: .center, verticalPosition: .center, sizingOption: .minimumSize, child: cornerSpec)
     }
 }

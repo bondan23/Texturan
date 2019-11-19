@@ -11,6 +11,7 @@ import AsyncDisplayKit
 class TexturanViewController: ASViewController<ASDisplayNode> {
     enum List {
         case wrapperNode(title: String, node: ASDisplayNode)
+        case stackNode(title: String, node: ASDisplayNode)
         case ratioNode(title: String, node: ASDisplayNode)
         case cornerNode(title: String, node: ASDisplayNode)
         case overlayNode(title: String, node: ASDisplayNode)
@@ -23,6 +24,7 @@ class TexturanViewController: ASViewController<ASDisplayNode> {
     
     let list = [
         List.wrapperNode(title: "ASWrapperLayoutSpec", node: WrapperNode()),
+        List.stackNode(title: "ASStackLayoutSpec", node: StackNode()),
         List.ratioNode(title: "ASRatioLayoutSpec", node: RatioNode()),
         List.cornerNode(title: "ASCornerLayoutSpec", node: CornerNode()),
         List.absoluteNode(title: "ASAbsoluteLayoutSpec", node: AbsoluteNode()),
@@ -64,6 +66,7 @@ extension TexturanViewController: ASTableDelegate, ASTableDataSource {
              let .backgroundNode(arg),
              let .centerNode(arg),
              let .texturanNode(arg),
+             let .stackNode(arg),
              let .absoluteNode(arg):
             textNode.attributedText = NSAttributedString(string: arg.title, attributes: attributes)
         }
@@ -92,6 +95,7 @@ extension TexturanViewController: ASTableDelegate, ASTableDataSource {
              let .backgroundNode(arg),
              let .centerNode(arg),
              let .texturanNode(arg),
+             let .stackNode(arg),
              let .absoluteNode(arg):
             viewController = ASViewController(node: arg.node)
             viewController.title = arg.title

@@ -1,18 +1,19 @@
 //
-//  WrapperNode.swift
+//  StackNode.swift
 //  Texturan
 //
-//  Created by James Sraun on 13/11/19.
+//  Created by James Sraun on 19/11/19.
 //  Copyright © 2019 tokopedia. All rights reserved.
 //
 
 import AsyncDisplayKit
 
-class WrapperNode: ASDisplayNode {
+class StackNode: ASDisplayNode {
     let blueNode: ASDisplayNode = {
         let node = ASDisplayNode()
         node.backgroundColor = .blue
-        node.style.preferredSize = CGSize(width: 200, height: 200)
+        node.style.height = ASDimensionMake(50)
+        node.style.width = ASDimensionMake(50)
         
         return node
     }()
@@ -20,15 +21,18 @@ class WrapperNode: ASDisplayNode {
     let redNode: ASDisplayNode = {
         let node = ASDisplayNode()
         node.backgroundColor = .red
-        node.style.flexGrow = 1
+        node.style.height = ASDimensionMake(100)
+        node.style.width = ASDimensionMake(100)
         
         return node
     }()
     
-    let yellowNode: ASDisplayNode = {
+    let orangeNode: ASDisplayNode = {
         let node = ASDisplayNode()
-        node.backgroundColor = .yellow
-        node.style.flexGrow = 1
+        node.backgroundColor = .orange
+
+        node.style.height = ASDimensionMake(150)
+        node.style.width = ASDimensionMake(150)
         
         return node
     }()
@@ -36,6 +40,7 @@ class WrapperNode: ASDisplayNode {
     override init() {
         super.init()
         backgroundColor = .init(white: 0.8, alpha: 1.0)
+        automaticallyRelayoutOnSafeAreaChanges = true
         automaticallyManagesSubnodes = true
     }
 }

@@ -33,12 +33,4 @@ class BackgroundNode: ASDisplayNode {
         addSubnode(childNode)
         automaticallyRelayoutOnSafeAreaChanges = true
     }
-    
-    override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
-        let backgroundSpec = ASBackgroundLayoutSpec(child: childNode, background: backgroundNode)
-        
-        let centerSpec = ASCenterLayoutSpec(horizontalPosition: .center, verticalPosition: .center, sizingOption: .minimumSize, child: backgroundSpec)
-        
-        return ASInsetLayoutSpec(insets: safeAreaInsets, child: centerSpec)
-    }
 }

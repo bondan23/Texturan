@@ -9,7 +9,7 @@
 import AsyncDisplayKit
 
 class RelativeNode: ASDisplayNode {
-    let testNode: ASDisplayNode = {
+    let blueNode: ASDisplayNode = {
         let node = ASDisplayNode()
         node.backgroundColor = .blue
         node.style.preferredSize = CGSize(width: 100, height: 100)
@@ -17,7 +17,7 @@ class RelativeNode: ASDisplayNode {
         return node
     }()
     
-    let testNode2: ASDisplayNode = {
+    let redNode: ASDisplayNode = {
         let node = ASDisplayNode()
         node.backgroundColor = .red
         node.style.preferredSize = CGSize(width: 100, height: 100)
@@ -25,9 +25,9 @@ class RelativeNode: ASDisplayNode {
         return node
     }()
     
-    let testNode3: ASDisplayNode = {
+    let orangeNode: ASDisplayNode = {
         let node = ASDisplayNode()
-        node.backgroundColor = .systemPink
+        node.backgroundColor = .orange
         node.style.preferredSize = CGSize(width: 100, height: 100)
         
         return node
@@ -46,21 +46,21 @@ class RelativeNode: ASDisplayNode {
         relativeSpec.horizontalPosition = ASRelativeLayoutSpecPosition.center
         relativeSpec.verticalPosition = .center
         relativeSpec.sizingOption = .minimumSize
-        relativeSpec.child = testNode
+        relativeSpec.child = blueNode
         
         let relativeSpec2 = ASRelativeLayoutSpec()
         
         relativeSpec2.horizontalPosition = .start
         relativeSpec2.verticalPosition = .start
         relativeSpec2.sizingOption = .minimumSize
-        relativeSpec2.child = testNode2
+        relativeSpec2.child = redNode
         
         let relativeSpec3 = ASRelativeLayoutSpec()
         
         relativeSpec3.horizontalPosition = .end
         relativeSpec3.verticalPosition = .end
         relativeSpec3.sizingOption = .minimumSize
-        relativeSpec3.child = testNode3
+        relativeSpec3.child = orangeNode
         
         let wrapperSpec = ASWrapperLayoutSpec(layoutElements: [relativeSpec, relativeSpec2, relativeSpec3])
         

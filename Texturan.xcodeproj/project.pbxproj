@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A615537EC3F19A32BC70F8AA /* Pods_Texturan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECAC6A716849CC91B0E51E41 /* Pods_Texturan.framework */; };
-		E5077332237D4E46007F8C87 /* LayoutNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5077331237D4E46007F8C87 /* LayoutNode.swift */; };
 		E5077334237D6192007F8C87 /* OverlayNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5077333237D6192007F8C87 /* OverlayNode.swift */; };
 		E5077336237D6B25007F8C87 /* BackgroundNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5077335237D6B25007F8C87 /* BackgroundNode.swift */; };
 		E5077339237E7438007F8C87 /* TexturanNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5077338237E7438007F8C87 /* TexturanNode.swift */; };
@@ -24,12 +23,12 @@
 		E5C7F5AB237D2611000686FA /* RatioNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C7F5AA237D2611000686FA /* RatioNode.swift */; };
 		E5C7F5AD237D2B7E000686FA /* CornerNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C7F5AC237D2B7E000686FA /* CornerNode.swift */; };
 		E5C7F5AF237D463F000686FA /* AbsoluteNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C7F5AE237D463F000686FA /* AbsoluteNode.swift */; };
+		E5EC379B2383AAE5004C741A /* StackNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EC379A2383AAE5004C741A /* StackNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		45C5B2918ABA9D6A44F86C99 /* Pods-Texturan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Texturan.debug.xcconfig"; path = "Target Support Files/Pods-Texturan/Pods-Texturan.debug.xcconfig"; sourceTree = "<group>"; };
 		72A85475AFDED282DBC2BDB2 /* Pods-Texturan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Texturan.release.xcconfig"; path = "Target Support Files/Pods-Texturan/Pods-Texturan.release.xcconfig"; sourceTree = "<group>"; };
-		E5077331237D4E46007F8C87 /* LayoutNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutNode.swift; sourceTree = "<group>"; };
 		E5077333237D6192007F8C87 /* OverlayNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayNode.swift; sourceTree = "<group>"; };
 		E5077335237D6B25007F8C87 /* BackgroundNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundNode.swift; sourceTree = "<group>"; };
 		E5077338237E7438007F8C87 /* TexturanNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TexturanNode.swift; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		E5C7F5AA237D2611000686FA /* RatioNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatioNode.swift; sourceTree = "<group>"; };
 		E5C7F5AC237D2B7E000686FA /* CornerNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerNode.swift; sourceTree = "<group>"; };
 		E5C7F5AE237D463F000686FA /* AbsoluteNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsoluteNode.swift; sourceTree = "<group>"; };
+		E5EC379A2383AAE5004C741A /* StackNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackNode.swift; sourceTree = "<group>"; };
 		ECAC6A716849CC91B0E51E41 /* Pods_Texturan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Texturan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -121,10 +121,10 @@
 				E573DD6A237C34C70025A4D4 /* WrapperNode.swift */,
 				E5C7F5AA237D2611000686FA /* RatioNode.swift */,
 				E5C7F5AC237D2B7E000686FA /* CornerNode.swift */,
-				E5077331237D4E46007F8C87 /* LayoutNode.swift */,
 				E5077333237D6192007F8C87 /* OverlayNode.swift */,
 				E5077335237D6B25007F8C87 /* BackgroundNode.swift */,
 				E5077338237E7438007F8C87 /* TexturanNode.swift */,
+				E5EC379A2383AAE5004C741A /* StackNode.swift */,
 			);
 			path = Texturan;
 			sourceTree = "<group>";
@@ -252,11 +252,11 @@
 				E5077334237D6192007F8C87 /* OverlayNode.swift in Sources */,
 				E5077339237E7438007F8C87 /* TexturanNode.swift in Sources */,
 				E54BC680237AC9A100FF8FAA /* CenterNode.swift in Sources */,
+				E5EC379B2383AAE5004C741A /* StackNode.swift in Sources */,
 				E54BC67E237AA39300FF8FAA /* RelativeNode.swift in Sources */,
 				E573DD6B237C34C70025A4D4 /* WrapperNode.swift in Sources */,
 				E5077336237D6B25007F8C87 /* BackgroundNode.swift in Sources */,
 				E5C7F5AB237D2611000686FA /* RatioNode.swift in Sources */,
-				E5077332237D4E46007F8C87 /* LayoutNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
