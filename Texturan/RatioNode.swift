@@ -13,7 +13,8 @@ class RatioNode: ASDisplayNode {
         let node = ASDisplayNode()
         node.backgroundColor = .green
         node.automaticallyManagesSubnodes = true
-        node.style.width = ASDimensionMake(100)
+//        node.style.height = ASDimensionMake(200)
+        node.style.width = ASDimensionMake(50)
         
         let innerCenterNode = ASDisplayNode()
         innerCenterNode.backgroundColor = .red
@@ -31,4 +32,9 @@ class RatioNode: ASDisplayNode {
         automaticallyRelayoutOnSafeAreaChanges = true
     }
 
+    override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
+        let stack = ASStackLayoutSpec.vertical()
+        stack.child = testNode
+        return ASInsetLayoutSpec(insets: safeAreaInsets, child: stack)
+    }
 }

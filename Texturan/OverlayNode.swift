@@ -13,7 +13,7 @@ class OverlayNode: ASDisplayNode {
     
     let childNode: ASDisplayNode = {
         let node = ASDisplayNode()
-        node.backgroundColor = .blue
+        node.backgroundColor = .yellow
         node.style.preferredSize = CGSize(width: 100, height: 100)
         
         return node
@@ -22,7 +22,7 @@ class OverlayNode: ASDisplayNode {
     let overlayNode: ASTextNode = {
         let node = ASTextNode()
         node.attributedText = NSAttributedString(string: "Texturan")
-        node.backgroundColor = .none
+        node.backgroundColor = .red
         
         return node
     }()
@@ -35,4 +35,11 @@ class OverlayNode: ASDisplayNode {
         automaticallyRelayoutOnSafeAreaChanges = true
     }
     
+    override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
+        let overlaySpec = ASOverlayLayoutSpec(child: childNode, overlay: overlayNode)
+
+        let centerSpec = ASCenterLayoutSpec(horizontalPosition: .center, verticalPosition: .center, sizingOption: .minimumSize, child: overlaySpec)
+
+        return ASInsetLayoutSpec(insets: safeAreaInsets, child: centerSpec)
+    }
 }

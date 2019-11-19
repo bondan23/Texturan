@@ -36,6 +36,18 @@ class WrapperNode: ASDisplayNode {
     override init() {
         super.init()
         backgroundColor = .init(white: 0.8, alpha: 1.0)
-        automaticallyManagesSubnodes = true
+//        automaticallyManagesSubnodes = true
+        
     }
+    
+    override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
+//        return ASWrapperLayoutSpec(layoutElement: blueNode)
+        
+        let spec1 = ASRelativeLayoutSpec(horizontalPosition: .end, verticalPosition: .center, sizingOption: .minimumSize, child: blueNode)
+        
+        let spec2 = ASStackLayoutSpec(direction: .vertical, spacing: 0, justifyContent: .start, alignItems: .start, children: [redNode, yellowNode])
+        
+        return ASWrapperLayoutSpec(layoutElements: [spec1, spec2])
+    }
+
 }

@@ -13,7 +13,7 @@ class BackgroundNode: ASDisplayNode {
     
     let backgroundNode: ASDisplayNode = {
         let node = ASDisplayNode()
-        node.backgroundColor = .blue
+        node.backgroundColor = .yellow
         
         return node
     }()
@@ -22,6 +22,7 @@ class BackgroundNode: ASDisplayNode {
         let node = ASTextNode()
         node.attributedText = NSAttributedString(string: "Texturan")
         node.backgroundColor = .none
+        node.style.height = ASDimensionMake(50)
         
         return node
     }()
@@ -32,5 +33,13 @@ class BackgroundNode: ASDisplayNode {
         addSubnode(backgroundNode)
         addSubnode(childNode)
         automaticallyRelayoutOnSafeAreaChanges = true
+    }
+    
+    override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
+        let backgroundSpec = ASBackgroundLayoutSpec(child: childNode, background: backgroundNode)
+        
+        let centerSpec = ASCenterLayoutSpec(horizontalPosition: .center, verticalPosition: .center, sizingOption: .minimumSize, child: backgroundSpec)
+        
+        return ASInsetLayoutSpec(insets: safeAreaInsets, child: centerSpec)
     }
 }

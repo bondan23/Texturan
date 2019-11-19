@@ -33,4 +33,10 @@ class AbsoluteNode: ASDisplayNode {
         backgroundColor = .init(white: 0.8, alpha: 1)
         automaticallyManagesSubnodes = true
     }
+    
+    override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
+        let absoluteSpec = ASAbsoluteLayoutSpec(children: [testNode, testNode2])
+        
+        return ASInsetLayoutSpec(insets: safeAreaInsets, child: absoluteSpec)
+    }
 }

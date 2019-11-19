@@ -128,4 +128,55 @@ class TexturanNode: ASDisplayNode {
         automaticallyRelayoutOnSafeAreaChanges = true
         automaticallyManagesSubnodes = true
     }
+    
+    //background
+    private func createBackgroundSpec() -> ASLayoutSpec {
+        let midSpace = ASLayoutSpec()
+        midSpace.style.flexGrow = 1
+       
+        let stackSpec = ASStackLayoutSpec.horizontal()
+        stackSpec.justifyContent = .spaceBetween
+        stackSpec.children = [seenStackSpec, soldStackSpec ,wishlistStackSpec]
+       
+        let insetSpec = ASInsetLayoutSpec(insets: UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8), child: stackSpec)
+       
+        return ASBackgroundLayoutSpec(child: insetSpec, background: graybackgroundNode)
+    }
+       
+    //bottom
+    private func createBottomStackSpec() -> ASLayoutSpec {
+        let backgroundSpec = createBackgroundSpec()
+       
+        let stackSpec = ASStackLayoutSpec.vertical()
+        stackSpec.spacing = 8
+        stackSpec.children = [productNameNode, backgroundSpec]
+       
+        return ASInsetLayoutSpec(insets: UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8), child: stackSpec)
+    }
+    
+    override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
+        let width = constrainedSize.max.width
+        productImageNode.style.width = ASDimensionMake(width)
+        productImageNode.style.height = ASDimensionMake(width)
+        
+        
+        let topCornerSpec = ASCornerLayoutSpec(child: productImageNode,
+                                             corner: wishListButton,
+                                             location: .bottomRight)
+        
+        topCornerSpec.style.alignSelf = .center
+        
+        let offsetForRightSie = 25
+        let paddingRight = 8
+        topCornerSpec.offset = CGPoint(x: -(offsetForRightSie + paddingRight), y: 0)
+        
+        
+        let bottomStackSpec = createBottomStackSpec()
+        let mainstackSpec = ASStackLayoutSpec.vertical()
+        mainstackSpec.justifyContent = .start
+        mainstackSpec.alignItems  = .stretch
+        mainstackSpec.children = [topCornerSpec, bottomStackSpec]
+        
+        return ASInsetLayoutSpec(insets: safeAreaInsets, child: mainstackSpec)
+    }
 }
