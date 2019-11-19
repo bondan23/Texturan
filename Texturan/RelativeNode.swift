@@ -39,31 +39,4 @@ class RelativeNode: ASDisplayNode {
         automaticallyManagesSubnodes = true
         automaticallyRelayoutOnSafeAreaChanges = true
     }
-    
-    override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
-        let relativeSpec = ASRelativeLayoutSpec()
-        
-        relativeSpec.horizontalPosition = ASRelativeLayoutSpecPosition.center
-        relativeSpec.verticalPosition = .center
-        relativeSpec.sizingOption = .minimumSize
-        relativeSpec.child = blueNode
-        
-        let relativeSpec2 = ASRelativeLayoutSpec()
-        
-        relativeSpec2.horizontalPosition = .start
-        relativeSpec2.verticalPosition = .start
-        relativeSpec2.sizingOption = .minimumSize
-        relativeSpec2.child = redNode
-        
-        let relativeSpec3 = ASRelativeLayoutSpec()
-        
-        relativeSpec3.horizontalPosition = .end
-        relativeSpec3.verticalPosition = .end
-        relativeSpec3.sizingOption = .minimumSize
-        relativeSpec3.child = orangeNode
-        
-        let wrapperSpec = ASWrapperLayoutSpec(layoutElements: [relativeSpec, relativeSpec2, relativeSpec3])
-        
-        return ASInsetLayoutSpec(insets: safeAreaInsets, child: wrapperSpec)
-    }
 }
